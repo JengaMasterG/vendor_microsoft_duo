@@ -201,7 +201,10 @@ PRODUCT_COPY_FILES += \
     vendor/microsoft/duo/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
+    vendor/microsoft/duo/proprietary/vendor/etc/init/hw/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
+    vendor/microsoft/duo/proprietary/vendor/etc/init/hw/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/hw/init.surfaceduo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.surfaceduo.rc \
+    vendor/microsoft/duo/proprietary/vendor/etc/init/hw/init.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.target.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/microsoft/duo/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
@@ -465,24 +468,9 @@ PRODUCT_COPY_FILES += \
     vendor/microsoft/duo/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/microsoft/duo/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/microsoft/duo/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.1.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.10.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.11.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.2.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.3.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.4.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.5.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.6.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.7.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.8.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@1.9.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.config@2.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@2.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/microsoft/duo/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
@@ -753,19 +741,6 @@ PRODUCT_COPY_FILES += \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.1.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.10.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.11.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.11.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.2.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.3.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.4.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.5.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.6.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.7.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.8.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@1.9.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@1.9.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.config@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.config@2.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
@@ -783,9 +758,6 @@ PRODUCT_COPY_FILES += \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.btconfigstore@2.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.camera.device@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -794,13 +766,6 @@ PRODUCT_COPY_FILES += \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@1.1.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@2.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@3.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapper@4.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so \
-    vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@1.0.so \
     vendor/microsoft/duo/proprietary/vendor/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.iop@2.0.so \
