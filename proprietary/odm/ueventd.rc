@@ -1,0 +1,5 @@
+/dev/hidraw*    0660    system  system
+# spi_hid sysfs
+/sys/class/hidraw/hidraw* device/power/control 0600 system system
+/sys/bus/spi/devices/spi* power/control 0600 system system
+/sys/bus/spi/devices/spi* power/wakeup 0600 system system
